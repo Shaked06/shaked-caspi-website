@@ -2,7 +2,7 @@ import Block from "@/app/ui/experience/block";
 import { getExperienceData } from "@/app/lib/resume";
 import { Works } from "../lib/definitions";
 
-export default async function Page(props: { experienceData: Works }) {
+export default async function Page() {
   try {
     const experienceData: Works = await getExperienceData();
     return (
