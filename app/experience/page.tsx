@@ -3,8 +3,8 @@ import { getExperienceData } from "@/app/lib/resume";
 import { Works } from "../lib/definitions";
 
 export default async function Page(props: { experienceData: Works }) {
-  const experienceData: Works = await getExperienceData();
   try {
+    const experienceData: Works = await getExperienceData();
     return (
       <div className="flex flex-col justify-center grow gap-6 px-4 md:py-4 md:px-8">
         <div className="flex flex-col justify-center grow gap-6 px-6 md:py-10 md:px-8">
