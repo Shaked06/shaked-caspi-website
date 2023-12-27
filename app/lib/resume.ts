@@ -4,9 +4,11 @@ import { Education, Projects, Publications, Works } from "./definitions";
 const resumeDirectory = path.join(process.cwd(), "app/lib/resume_data");
 
 export async function getExperienceData(): Promise<Works> {
-  const fullPath = path.join(resumeDirectory, "experience.json");
-  const file = await fs.readFile(fullPath, "utf8");
-  const data = JSON.parse(file);
+  // const fullPath = path.join(resumeDirectory, "experience.json");
+  const file = await fetch(
+    "https://raw.githubusercontent.com/Shaked06/shaked-caspi-website/main/app/lib/resume_data/experience.json"
+  );
+  const data = await file.json();
 
   return {
     ...data,
@@ -14,9 +16,11 @@ export async function getExperienceData(): Promise<Works> {
   };
 }
 export async function getEducationData(): Promise<Education> {
-  const fullPath = path.join(resumeDirectory, "education.json");
-  const file = await fs.readFile(fullPath, "utf8");
-  const data = JSON.parse(file);
+  // const fullPath = path.join(resumeDirectory, "education.json");
+  const file = await fetch(
+    "https://raw.githubusercontent.com/Shaked06/shaked-caspi-website/main/app/lib/resume_data/education.json"
+  );
+  const data = await file.json();
 
   return {
     ...data,
@@ -25,8 +29,10 @@ export async function getEducationData(): Promise<Education> {
 }
 export async function getProjectData(): Promise<Projects> {
   const fullPath = path.join(resumeDirectory, "project.json");
-  const file = await fs.readFile(fullPath, "utf8");
-  const data = JSON.parse(file);
+  const file = await fetch(
+    "https://raw.githubusercontent.com/Shaked06/shaked-caspi-website/main/app/lib/resume_data/project.json"
+  );
+  const data = await file.json();
 
   return {
     ...data,
@@ -35,9 +41,10 @@ export async function getProjectData(): Promise<Projects> {
 }
 export async function getPublicationData(): Promise<Publications> {
   const fullPath = path.join(resumeDirectory, "publications.json");
-  const file = await fs.readFile(fullPath, "utf8");
-  const data = JSON.parse(file);
-
+  const file = await fetch(
+    "https://raw.githubusercontent.com/Shaked06/shaked-caspi-website/main/app/lib/resume_data/publications.json"
+  );
+  const data = await file.json();
   return {
     ...data,
     fallback: true,
