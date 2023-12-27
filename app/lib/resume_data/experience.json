@@ -1,0 +1,26 @@
+{
+  "title": "Experience",
+  "works": {
+    "work3": {
+      "title": "Teaching Assistant",
+      "place": "Faculty of Statistics, TAU",
+      "work_period": "Feb – July 2023",
+      "desc": "Evaluated the home assignments of 60 undergraduate students majoring in Statistics enrolled in the course Statistical Computing (0365-2101).",
+      "skills": []
+    },
+    "work2": {
+      "title": "Software Engineer Intern",
+      "place": "Meta",
+      "work_period": "July – Oct 2022",
+      "desc": "Created the integration of NFT transactions to a unified platform that enabled to perform any transactions in a secure manner. Developed and implemented components and integration methods to enable the calculation of transaction risk levels. Increased test coverage by implementing unit tests, integration tests, and end-to-end tests that were previously missing.",
+      "skills": ["Python", "php", "C++"]
+    },
+    "work1": {
+      "title": "Data Analyst Student",
+      "place": "Check Point",
+      "work_period": "Feb – Nov 2021",
+      "desc": "Maintained and improved the phishing detection engine by adding rules to catch criminal activities. Achieved a safer mailbox for clients by developing tools and automation to detect and incriminate suspicious activities, leading to improved coverage rates. Analyzed millions of emails to identify patterns, leading to a 5% increase in the engine’s coverage.",
+      "skills": ["pandas", "NumPy", "Matplotlib"]
+    }
+  }
+}

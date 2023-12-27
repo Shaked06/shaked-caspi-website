@@ -1,0 +1,26 @@
+{
+  "title": "Projects",
+  "projects": {
+    "project3": {
+      "title": "Tabular data classification using CNN",
+      "project_period": "2022",
+      "metadata": "Deep Learning Workshop, TAU",
+      "desc": "Suggested a new approach for dealing with tabular data using DL, specifically employing convolutional networks.",
+      "skills": ["Pytorch", "Matplotlib"]
+    },
+    "project2": {
+      "title": "Maor-Med Clinic",
+      "project_period": "2020",
+      "metadata": "",
+      "desc": "Developed and deployed a custom-made website for a private clinic.",
+      "skills": ["Django", "HTML", "CSS", "JavaScript", "mysql"]
+    },
+    "project1": {
+      "title": "Survival Analysis ML Project",
+      "project_period": "2023",
+      "metadata": "Survival Analysis and ML Methods, 3654-3201 TAU",
+      "desc": "Conducted an investigation comparing known DL models to traditional ML models in the context of survival analysis problems. Utilized established benchmarks to perform a comprehensive comparison between these methods. Executed multiple tests and thoroughly explored the results.",
+      "skills": ["Python", "pandas", "Pytorch", "Jupyter-Notebook"]
+    }
+  }
+}

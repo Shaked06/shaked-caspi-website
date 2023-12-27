@@ -1,0 +1,17 @@
+{
+  "title": "Education",
+  "degrees": {
+    "MSc.": {
+      "title": "MSc.",
+      "major": "Statistics with a Data Science track",
+      "university": "Tel Aviv University",
+      "degree_period": "Dec 2023 - Present"
+    },
+    "BSc.": {
+      "title": "BSc.",
+      "major": "Computer Science and Statistics",
+      "university": "Tel Aviv University",
+      "degree_period": "Oct 2019 – July 2023"
+    }
+  }
+}
