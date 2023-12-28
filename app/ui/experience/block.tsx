@@ -21,6 +21,7 @@ export default function Block({ props }: { props: Work }) {
         <p>
           {props.skills.map((value, index) => (
             <motion.button
+              key={index}
               className="bg-date opacity-50 mt-2 mr-1 px-1 rounded text-[10px] font-base text-white100 cursor-default tracking-wider"
               whileHover={{
                 backgroundColor: "#243B55",
