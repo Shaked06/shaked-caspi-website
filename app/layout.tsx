@@ -24,11 +24,11 @@ export default function RootLayout({
               `${noto_jp.className} antialiased`
             )}
           >
-            <div className="flex flex-col gap-2 md:gap-8 md:flex-row md:w-screen">
-              <div className="flex flex-col justify-start gap-6 md:py-10 md:px-8">
+            <div className="flex flex-col gap-2 md:gap-8 md:flex-row w-screen">
+              <div className="flex flex-col justify-start gap-6 md:py-10 md:px-8 ">
                 <SideNav />
               </div>
-              <div className="w-2/3">{children}</div>
+              <div className="min-w-screen">{children}</div>
             </div>
           </div>
         </main>
