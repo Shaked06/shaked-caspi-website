@@ -6,7 +6,7 @@ export default function SideNav() {
   return (
     <div className="flex flex-col gap-8 px-3 py-4 tracking-[0.25em]">
       <Link className="flex justify-start p-2" href="/">
-        <div className="text-6xl font-base text-white200 flex-wrap">
+        <div className="text-6xl font-base text-white200 grow flex-wrap md:whitespace-nowrap">
           {fullName}
         </div>
       </Link>
