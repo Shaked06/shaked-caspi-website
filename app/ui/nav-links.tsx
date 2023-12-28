@@ -41,7 +41,7 @@ export default function NavLinks() {
               }
             )}
           >
-            <motion.p whileHover={{ x: 15 }}>{link.name}</motion.p>
+            <motion.p whileHover={{ x: 16 }}>{link.name}</motion.p>
           </Link>
         );
       })}
