@@ -1,8 +1,8 @@
 "use client";
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import { motion } from "framer-motion";
 
 const links = [
   // { name: "Home", href: "/" },
@@ -35,13 +35,15 @@ export default function NavLinks() {
             key={link.name}
             href={link.href}
             className={clsx(
-              "flex h-[48px] gap-2 p-3 text-xl md:text-2xl text-date font-thin md:p-2 md:px-3 md:grow"
-              // {
-              //   "bg-sky-100 text-blue-600": pathname === link.href,
-              // }
+              "flex h-[48px] gap-2 p-3 text-xl md:text-2xl text-date font-thin md:p-2 md:px-3 md:grow",
+              {
+                "font-medium": pathname === link.href,
+              }
             )}
           >
-            <p className="">{link.name}</p>
+            <motion.p whileHover={{ x: 15, type: "spring" }}>
+              {link.name}
+            </motion.p>
           </Link>
         );
       })}
