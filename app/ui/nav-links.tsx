@@ -37,13 +37,11 @@ export default function NavLinks() {
             className={clsx(
               "flex h-[48px] gap-2 p-3 text-xl md:text-2xl text-date font-thin md:p-2 md:px-3 md:grow",
               {
-                "font-medium": pathname === link.href,
+                "font-medium ": pathname === link.href,
               }
             )}
           >
-            <motion.p whileHover={{ x: 15, type: "spring" }}>
-              {link.name}
-            </motion.p>
+            <motion.p whileHover={{ x: 15 }}>{link.name}</motion.p>
           </Link>
         );
       })}
