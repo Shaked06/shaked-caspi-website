@@ -10,7 +10,7 @@ export default function SideNav() {
           {fullName}
         </div>
       </Link>
-      <div className="flex flex-col flex-wrap md:flex-nowrap items-start md:gap-3 md:flex-col md:space-x-0 md:space-y-2">
+      <div className="flex flex-col flex-wrap md:flex-nowrap items-start texe-date font-thin md:gap-3 md:flex-col md:space-x-0 md:space-y-2">
         <NavLinks />
         {/* <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block "></div> */}
       </div>
