@@ -1,6 +1,6 @@
 import Link from "next/link";
 import NavLinks from "@/app/ui/nav-links";
-
+import FooterLinks from "@/app/ui/footer-links";
 export default function SideNav() {
   const fullName = "SHAKED CASPI";
   return (
@@ -12,6 +12,10 @@ export default function SideNav() {
       </Link>
       <div className="flex flex-col flex-wrap md:flex-nowrap items-start texe-date font-thin md:gap-3 md:flex-col md:space-x-0 md:space-y-2">
         <NavLinks />
+        {/* <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block "></div> */}
+      </div>
+      <div className="flex flex-row justify-start grow">
+        <FooterLinks />
         {/* <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block "></div> */}
       </div>
     </div>
