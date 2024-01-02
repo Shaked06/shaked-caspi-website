@@ -7,7 +7,7 @@ import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "SHAKED CASPI",
-  description: "shaked caspi portofolio",
+  description: "Shaked Caspi Portfolio Website",
 };
 
 export default function RootLayout({
